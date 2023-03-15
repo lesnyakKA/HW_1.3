@@ -55,10 +55,6 @@ public class Cat {
 
     @Override
     public String toString() {
-        return "Cat{" +
-                "name='" + name + '\'' +
-                ", weight=" + weight +
-                ", numbCountry=" + numbCountry +
-                '}';
+        return "{Name= " + name + ", " + "Weight= " + weight + ", Country= " + getNumbCountry() +"}";
     }
 }
