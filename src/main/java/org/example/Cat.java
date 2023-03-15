@@ -2,6 +2,8 @@ package org.example;
 
 import org.example.Country;
 
+import java.util.Objects;
+
 public class Cat {
     private String name;
     private int weight;
@@ -38,4 +40,25 @@ public class Cat {
         this.numbCountry = numbCountry;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Cat cat = (Cat) o;
+        return weight == cat.weight && numbCountry == cat.numbCountry && Objects.equals(name, cat.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, weight, numbCountry);
+    }
+
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "name='" + name + '\'' +
+                ", weight=" + weight +
+                ", numbCountry=" + numbCountry +
+                '}';
+    }
 }

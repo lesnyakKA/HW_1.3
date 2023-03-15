@@ -11,8 +11,8 @@ public class Reader {
         try {
             FileReader fileReader = new FileReader("hw_text.txt");
             BufferedReader bufferedReader = new BufferedReader(fileReader);
-            while((line= bufferedReader.readLine()) != null) {
-            System.out.println(line);
+            while ((line = bufferedReader.readLine()) != null) {
+                System.out.println(line);
             }
             fileReader.close();
 

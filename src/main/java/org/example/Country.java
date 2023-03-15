@@ -1,11 +1,11 @@
 package org.example;
 
 public enum Country {
-    RUSSIA("Россия"), ENGLAND("Англия"), SCOTLAND( "Шотландия");
+    RUSSIA("Россия"), ENGLAND("Англия"), SCOTLAND("Шотландия");
 
     private String name;
 
-    Country (String name) {
+    Country(String name) {
         this.name = name;
     }
 
@@ -22,6 +22,4 @@ public enum Country {
         }
         return null;
     }
-
-
 }

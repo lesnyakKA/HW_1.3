@@ -23,11 +23,10 @@ public class Search {
             System.out.println("Файл не может содержать другие файлы. Проверьте правильность указанного пути.");
         }
     }
-
     public void countingFiles(String path) {
         File file = new File(path);
         List<File> list = new ArrayList<>();
-        searchFiles(file ,list);
+        searchFiles(file, list);
         System.out.println("--------------------------");
         System.out.println("Общее количество файлов: " + list.size());
     }

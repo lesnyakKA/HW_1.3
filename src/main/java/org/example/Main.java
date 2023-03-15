@@ -18,9 +18,7 @@ public class Main {
         System.out.println(cat.getWeight());
         System.out.println(cat.getNumbCountry());
 
-
         Search search = new Search();
-        search.countingFiles("D:\\Торрент");
-
+        search.countingFiles("C:\\");
     }
 }
